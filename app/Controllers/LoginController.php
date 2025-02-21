@@ -51,7 +51,7 @@ class LoginController extends BaseController
             ]);
 
             // Log successful login attempt
-            log_message('info', 'User ' . $username . ' logged in successfully.');
+            // log_message('info', 'User ' . $username . ' logged in successfully.');
 
             return redirect()->to('/admin/dashboard')->with('success', 'Login berhasil');
         } else {

@@ -114,4 +114,15 @@ class PaketModel extends Model
             return false;
         }
     }
+
+    public function countAll()
+    {
+        return $this->countAllResults();
+    }
+
+    public function countAllByStatus($status = 'active')
+    {
+        return $this->where('status', $status)->countAllResults();
+    }
+
 }

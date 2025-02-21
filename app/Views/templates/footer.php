@@ -38,5 +38,6 @@
     });
 </script>
 <script src="<?= base_url('assets/js/sidebar-costume.js') ?>" defer></script>
+<script src="<?= base_url('assets/js/notification.js') ?>" defer></script>
 </body>
 </html>
