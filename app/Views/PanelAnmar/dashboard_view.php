@@ -3,7 +3,7 @@
 
 <main class="p-8 sm:ml-64">
     <?php if(session()->getFlashdata('success')): ?>
-        <div id="notification" class="fixed top-0 left-1/2 transform -translate-x-1/2 mt-4 bg-green-500 text-white p-4 rounded shadow-lg z-50 hidden">
+        <div id="notification" class="fixed top-0 left-1/2 transform -translate-x-1/2 mt-4 bg-green-700 text-white p-4 rounded shadow-lg z-50 hidden">
             <p>Notifikasi: <?= session()->getFlashdata('success') ?></p>
         </div>
     <?php endif; ?>

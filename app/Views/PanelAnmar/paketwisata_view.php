@@ -2,6 +2,18 @@
 <?= $this->include('templates/sidebar') ?>
 
 <main class="p-8 sm:ml-64">
+    <?php if(session()->getFlashdata('message')): ?>
+        <div id="notification" class="fixed top-0 left-1/2 transform -translate-x-1/2 mt-4 bg-green-700 text-white p-4 rounded shadow-lg z-50 hidden">
+            <p>Notifikasi: <?= session()->getFlashdata('message') ?></p>
+        </div>
+    <?php endif; ?>
+
+    <?php if(session()->getFlashdata('error')): ?>
+        <div id="notification" class="fixed top-0 left-1/2 transform -translate-x-1/2 mt-4 bg-red-600 text-white p-4 rounded shadow-lg z-50 hidden">
+            <p>Notifikasi: <?= session()->getFlashdata('error') ?></p>
+        </div>
+    <?php endif; ?>
+
     <!-- Header -->
     <header class="mb-8 mt-8">
         <h1 class="text-3xl font-semibold text-gray-800 mb-2">Paket Perjalanan</h1>
