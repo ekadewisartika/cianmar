@@ -19,7 +19,7 @@ class CreateInformationsTable extends Migration
             'instagram'    => ['type' => 'varchar', 'constraint' => 255],
             'email'       => ['type' => 'varchar', 'constraint' => 255],
             'website'      => ['type' => 'varchar', 'constraint' => 255],
-            'maps_link'    => ['type' => 'varchar', 'constraint' => 255],
+            'maps_link'    => ['type' => 'longtext'],
             'created_at'  => ['type' => 'datetime', 'null' => true],
             'updated_at'  => ['type' => 'datetime', 'null' => true],
         ]);

@@ -22,7 +22,7 @@
             <iframe 
                 src="<?= $data['information']['maps_link'] ?>" 
                 class="w-full h-full"
-                style="border:0;" 
+                style="border:5px;" 
                 allowfullscreen="" 
                 loading="lazy">
             </iframe>
