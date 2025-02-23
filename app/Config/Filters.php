@@ -79,6 +79,20 @@ class Filters extends BaseFilters
             // 'invalidchars',
             // 'auth' => ['except' => ['/admin/*']],
             // 'ratelimit' => ['except' => ['/admin/*']],
+            'auth' => ['except' => [
+                '/',
+                '/home',
+                '/tentang',
+                '/legalitas',
+                '/layanan',
+                '/paket',
+                '/rekening',
+                '/kontak',
+                '/kantor',
+                '/sambutan',
+                '/galeri',
+                '/admin',
+            ]],
         ],
         'after' => [
             // 'honeypot',
@@ -99,7 +113,9 @@ class Filters extends BaseFilters
      *
      * @var array<string, list<string>>
      */
-    public array $methods = [];
+    public array $methods = [
+        'POST' => ['ratelimit'],
+    ];
 
     /**
      * List of filter aliases that should run on any
