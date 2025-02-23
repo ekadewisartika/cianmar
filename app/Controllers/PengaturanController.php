@@ -34,7 +34,7 @@ class PengaturanController extends BaseController
             'facebook' => 'permit_empty|max_length[255]',
             'instagram' => 'permit_empty|max_length[255]',
             'email' => 'required|valid_email|max_length[255]',
-            'maps_link' => 'permit_empty|valid_url|max_length[255]',
+            'maps_link' => 'permit_empty',
         ];
 
         if (!$this->validate($validationRules)) {

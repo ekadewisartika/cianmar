@@ -75,8 +75,8 @@
             <div class="flex justify-between items-center px-4 py-3">
                 <div class="flex items-center">
                     <img src="<?= base_url('/assets/images/logo.png') ?>" alt="Logo" class="w-8 h-8 mr-2">
-                    <h1 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-green-500 to-green-600 hover:from-green-500 hover:via-green-600 hover:to-green-500 transition-all duration-300 transform hover:scale-105 animate-pulse text-3d">
-                        Anmar Binawisata
+                    <h1 class="text-2xl text-green-600 font-bold">
+                        <?= $data['information']['name'] ?>
                     </h1>
                 </div>
             </div>

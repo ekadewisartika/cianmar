@@ -24,13 +24,15 @@ class AnmarController extends BaseController
 
     public function home()
     {
+        $information = $this->informationModel->first();
         $packages = $this->paketModel->getPackagesByStatus('active', 'created_at', 'DESC');
         if (!$packages) {
             $packages = []; // Default to empty array if no packages found
         }
         $data = [
             'title' => 'Home - Anmar Binawisata',
-            'packages' => $packages
+            'packages' => $packages,
+            'information' => $information
         ];
         return view('home', ['data' => $data]);
     }
