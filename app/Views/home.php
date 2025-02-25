@@ -76,7 +76,7 @@
                 <div class="flex items-center">
                     <img src="<?= base_url('/assets/images/logo.png') ?>" alt="Logo" class="w-8 h-8 mr-2">
                     <h1 class="text-2xl text-green-600 font-bold">
-                        <?= $data['information']['name'] ?>
+                        <?= $data['information']['name'] ?>demo
                     </h1>
                 </div>
             </div>
