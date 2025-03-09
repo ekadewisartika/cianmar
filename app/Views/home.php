@@ -346,7 +346,7 @@
             });
 
             // Mecca Time (UTC+3)
-            const meccaTime = new Date(now.toLocaleString('id-ID', { 
+            const meccaTime = new Date(now.toLocaleString('en-US', { 
                 timeZone: 'Asia/Riyadh' 
             }));
             const meccaTimeString = meccaTime.toLocaleTimeString('id-ID', { 
